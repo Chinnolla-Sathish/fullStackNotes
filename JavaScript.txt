@@ -10,8 +10,8 @@ java and javaScript have about as much in common as car and carpet .The only rea
 
 BigDifferences
 
---javaScript-interpreted
---java - Compiled	
+--javaScript-interpreted language
+--java - Compiled language	
 
 -- javaScript support all of the major borwsers	
 
