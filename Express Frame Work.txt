@@ -1,0 +1,140 @@
+Express Frame Work
+
+-- it is a framework on top of the node 
+-- Express is a javascript framework that allows us to create backends.
+-- node is Screwdiver javaScript is screw Express is a electric Screwdriver it a very fast and quick.
+
+
+Whats the backend ?
+
+--A sever is a computer or big computer is would on 24/7 , it serve the requests made by http or https it search for the html,css and javascrript files.
+-- A server consists of an application and database. The application listens the user requests made.
+
+
+
+-----------------------SIX STEPS TO CREATE AN EXPRESS SERVER---------------------------------
+1.Create directory
+2.Create index.js file
+3.initialise NPM
+4.install the Express package
+5.Write Server application in index.js
+6.Start server
+
+--ports are basically doors of the server
+each port is identified by a unique number
+
+in command line 
+
+mkdir "Foldername" --- create a new directory or new Folder
+touch index.js ---- create a new file in the directory or new folder [but it is not working in my computer ]
+
+
+
+--------------------------------------------- HTTP ------------------------------------
+-- hyper text transfer protocol(http)
+	--decribes a language , the language that allows computer to talk to each other across the internet.
+
+^^^^^^^^^^ HTTP Request vocabulary ^^^^^^^^^^
+--GET  --> Request a resource from a server or database
+--POST --> Sending Resource to server or database
+--PUT  --> Replace the resource 
+--PATCH  -->patch up a resurce 
+--DELETE  --> delete the resource form the sever or database
+
+put and patch are little bit similar they update the resourse in sever put(replace the resource completly) and patch(patch up the resource)
+
+----------------- for all this method experments you need to install a postman in you system[lecture 203]-------------
+
+
+^^^^^^^^nodemon^^^^^^^^^
+--nodemon --> it automatically restarting the node application when file changes in the directory are detected.
+
+syntax: in command line instead of entering node index.js just enter nodemon index.js
+
+before it mustbe installed
+npm i -g nodemon (here g stands for global)
+
+---------------------------------------PACKAGES-------------------------------------
+
+--express - it is a framework and a package in the node.js
+installation:
+	npm install express
+--nodemon[ it will auto save whenever there is any change in the file]
+installation
+npm install -g nodemon (here g stands for global)
+--body-parser [middleware -> used for preprocess the request]
+installation
+	npm install body-parser
+--morgan [ used for log the request]
+installation:
+	npm install morgan
+
+---------------------------STANDARD STATUS RESPONSE CODE -------------------------------
+
+--informational responses(100-199)
+--Successful responses(200-299)
+--Redirection messages(300-399)
+--Client error responses(400-499) // 404 error is also one of this http standard status response code
+--server error responses(500 - 599)
+
+// you will find the details of each number in : developer.mozilla.org/docs/Web/HTTP/Status.
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------EXPRESS MIDDLEWARES------------------------------- 
+
+-- The man in the middle. Using body-parser together with HTML forms
+
+--what does the middleware do?
+	
+	--> it preprocess the request --[body-parser middleware is used for processing]
+	-->it logging the reqests before actually processed [most commonlu used logging middlewares for node.jsis a package called morgan]
+	-->We can also use middle for authentication
+	--> identify and handle the errors before they go through to the handlers
+	-->Body-parser -->it a example of middleware --> it is basically used to handle form data.
+
+^^^^^^^^^ Morgan Package ^^^^^^^^^^^^^^^^^
+ - it log the request that come into the server
+ - morgan is triggered before any http methods trigged, it give the log details like date and time , type of request, url of the request, status code of the request.
+
+predefined formats used with morgan: combined,common,dev,short,tiny
+
+
+******* next() method and bodyparser paly a important role in express ******************
+******** res.sendFile() it is basicallya sending a static file *******************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

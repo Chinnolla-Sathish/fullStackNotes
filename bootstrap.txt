@@ -1,0 +1,98 @@
+BootStrap  - A CSS framework
+- mainly used for components styling 
+- css external framework is bootstrap (we can add css external without writing code)
+
+when to use css external framework
+---> when there is no need to control website at that time external css is used.
+
+when not to  css external framework 
+---> when there is contrl over a website .
+
+
+we can include this external css in our code in head section by adding some link and we 
+also include in before body section ends for any fuctionality like click button.
+
+
+lecture 64 for any doubts 
+--> bootstrap layout in bootstrap website  
+
+
+for bootstrap layout
+
+row - 12
+we can divide it into number of way accroding to our need like for phone ,laptop, desktop, etc 
+
+small ---- sm
+medium ------ md
+large ------ lg
+Extra large -------- xl
+extra  extra large ----- xxl 
+
+
+col-sm-2 col-md-4 col-lg-6 col-xl-8 col-xxl-12
+
+
+--------------------------------------------------------------------------
+Bootstrap Components [the main reason why we are using bootstrap is because prebuild and pre-styledcomponents
+
+- Buttons
+- cards etc
+
+--Button-- for notes bootstrap website-->bootstrap documents 
+
+class="btn btn-primary"
+class="btn btn-secondary"
+class="btn btn-Sucess"
+class="btn btn-danger"
+class="btn btn-warning"
+class="btn btn-info"
+class="btn btn-light"
+class="btn btn-primary"
+class="btn btn-link"
+
+
+Button Base class
+Button variants
+button tags(link,button,input,submit,reset)
+outline buttons
+Button sizes(large and small)
+Button customizaton
+Disabled State button
+Link functionality caveat
+block Button
+
+
+
+-----cards-----
+-Titles,text and links
+-image and links
+-List groups
+-kitchen sink -(titles,text,links,images,listgroups)
+-header and footer
+-sizing and using grid markup
+-Using utilites
+-using custom Css
+-text alignment in the card
+-navigation
+-image and image caps(last updated 3 min ago)
+-image overlays
+-Horizontal(one side image and oneside matter)
+-card Styles(background and color)
+-Border
+-Mixins utilites(change the borders on the card header and footer)
+-card groups( cards are arrangend in inline)
+-Grid cards (cards are arranged in a grid manner)
+
+
+
+
+
+-------------------------------------------------------
+
+we can also use bootstrap icons in our website 
+
+
+
+-------carousel-------------[A slideshow components ]
+
+-allows us to scroll to multipule images 

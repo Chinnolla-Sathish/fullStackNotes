@@ -1,0 +1,37 @@
+Embedded JavaScript
+  --> embedded javaScript is a templating language 
+--> it allow us to write javascript code inside html
+
+^^^^^^^^^^^^ EJS TAGS ^^^^^^^^^^^^^^^
+<%=Variable%>	-js output
+<%console.log("hello")%>(pure EJS tag)	-js execute
+<%-<h1>Hello</h1>%>(only html code) -render html
+<%%	 %%> it is not treated as EJS  -show<% or %>
+<%#This is a comment %>	-stop Execution
+<%-include("header.ejs") %> -insert another EJS file
+
+
+
+**********Every single line of javascript need ejs tag***********************
+exmple:
+
+<% if(condition){%>
+	some html tags;
+<%}%>
+
+ 
+--------passing data to client side to server side  and server side to client side-------------
+
+passing data to server side middle ware are used (to see the data)
+passing data to client side with the help of embedded javaScript (ejs tags, locals.name etc
+
+-----------------Partials-------------------------
+<%- include("header.ejs") %>
+<%- include("footer.ejs") %>
+<%- %> mainly used to write html code
+
+---partials are mainly used to avoid the repetation of code
+-----------------Static files -----------------------------
+static files(images,css files) are placed in public folder of  main folder in index.js we must declare 
+
+app.use(express.static("public")) other wise the css and images will not apply to that page
