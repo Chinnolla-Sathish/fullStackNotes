@@ -1,0 +1,74 @@
+Git,Github
+----------------------------
+DIFFERENCES
+-- Git is version control that keep track of changes to source code  => github is a webbased platform that host the git repositories.
+-- Git is a Software => github is Service 
+--Git is locally installed on the system => github is hosted on the web
+--Git is command line tool => Github is a graphical user interface.
+--Git is maintanied by linux => github is maintained by microsoft
+----------------------------
+-- Using git Through command line we can do things  version control ,clone repositories ,Fork,pull request,merge repositories.
+
+------------------------------------------
+COMMAND LINE
+
+--mkdir directory name -(creating new directory)
+-- ls -(it check what all the files present in the current directory)
+--touch new_file_name - (it create new file , [npm install -g touch-cli])
+-- filename -(to open the file )
+-- dir  or dir  /s or dir /l -(to know the list of files in a directory)
+-- dir /b -(it list only filenames without any other information )
+--dir /a -(it list list the hidden file names also)
+-- del filename -(deleting file from directory)
+
+
+-----------GIT COMMANDS ----------------------------
+in order to control version or commit changes the file should be in staging area . it basically a intermediate place 
+
+-- git status  --(it show the status of the files)
+--git add file_name --(it will add the file in staging area)
+--git add . --(it will add all the files in the current directory)
+--git commit -m "message that you " --(it commit the changes)
+--git log  - (it is used to see the log history)
+--git diff file_name.txt -( it gives what all changes made current and previous version)
+--git checkout --(roll back the chapter to previous version)
+--touch .gitignore --(its a hidden file, it allow us to ignore the commits)
+--git rm --cached -r . --(this command is used to remove all the files from staging area)
+--git clone url (url of remote repository) -- it copy the remote repositories to local repositories
+
+
+=> working directory =>staging area => local repository 
+------------------------------------GITHUB-----------------------------------
+-- git remote add <name> url(github project path url) -- it will add our local repository to remote repository
+-- git push -u <name> main - it will move files into github 
+
+=>working directory => staging area => local repository => remoterepositoy
+
+
+local repository -> .git file 
+remote repository -> github,which hosts our code and also hosts all of the changes 
+
+
+***********once the git file is pushed into into github , then you cannot commit the changes in the command line 
+
+******** how can we stop commiting specific files , using through .gitignore, name the fiels that are ignored, in 
+.gitignore file.
+
+and if dont want to commit .txt files simply add this in .gitignore file (*.txt)
+
+-------------------------------.GITIGNORE(.gitignore)--------------------------------
+
+******** how can we stop commiting specific files , using through .gitignore, name the fiels that are ignored, in 
+.gitignore file.
+
+and if dont want to commit .txt files simply add this (*.txt) in .gitignore file
+
+
+
+
+github/gitignore in github specifies which files should not be commited in node,c,c++,python,java etc we should add that content in out .gitignore file
+
+-- we cannot push anything to github without commiting
+
+-----------------------------GIT CLONING (git cloning)-------------------------------------
+-- the main idea is how add git repositores(remote repositeres) to our local repositories
