@@ -96,3 +96,21 @@ var height = prompt("Enter height (in meters)");
 var BMI = bmiCalculator(weight,height);
 
 console.log(BMI);
+
+-------------------------Math Library---------------------------------
+--Math.pow(base,exponent)  --> calculating power of a number 
+--Math.floor(num) --> it will give floor of a number ex 5.3 it will give 5
+--Math.random() --> it will give random number (range 0 - 0.99 16 decimals) it will alwas in 0 to 1
+
+-----------------------------COMPARATORAS-------------------------------
+--- === is equal to if left hand side is equals to right hand side
+--- !== is not equal to 
+the biggest  between == and === is === will check comparision and data type also
+but == will check only comaprsion not data type it will return true for (1 == "1")
+
+-------------------------ARRAYS---------------------------------------
+var arr = [1,2,3,5,6,7]
+
+arr.includes(item) -> it return true if the item is present in the array.
+arr.push(item) --> pushing elements into array 
+arr.pop --> it will pop the element form the array from last 
