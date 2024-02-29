@@ -1,0 +1,32 @@
+CSS Frameworks
+-> flex
+->float
+->grid
+->bootstrap
+
+video number : 61
+grid-auto-rows:300px;  the defulat size for the girds if  grid is not fix in a matrix.
+
+
+Grid Sizing :
+	Fixed Size
+	Auto Size
+	fractional Size
+	minMax size
+	Repeat
+	Test
+
+----placing something into grid or combining grids -------
+by using 
+	grid-coloum-start: linenumber;  
+	grid-coloum-end: linenumber;     lecture number :62;
+	grid-rows-start: linenumber;  
+	grid-rows-end: linenumber;  
+
+ the above 4 statements can be simply written as 
+
+	grid-area: row-start number/column-start number/row-end number/column number;
+
+
+grid-column: span 2; it combines two column grid space  into one grid
+grid-row: span 2; it combines two row grid space  into one grid
