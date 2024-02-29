@@ -12,6 +12,7 @@ DIFFERENCES
 ------------------------------------------
 COMMAND LINE
 
+-- cd .. --> this will take you back from current directory.
 --mkdir directory name -(creating new directory)
 -- ls -(it check what all the files present in the current directory)
 --touch new_file_name - (it create new file , [npm install -g touch-cli])
@@ -72,3 +73,32 @@ github/gitignore in github specifies which files should not be commited in node,
 
 -----------------------------GIT CLONING (git cloning)-------------------------------------
 -- the main idea is how add git repositores(remote repositeres) to our local repositories
+
+
+
+---------------------------BRANCHING AND MERGING------------------------------------------------
+
+-- Branching is basically a sidedevelopment of sequential development if side devlopment results are fruitful 
+we are merging that seqential development and sidedevelopment
+
+
+git branch branch_name
+git merge branch_name
+
+after merging it allow us to write some message and in order to quit from that you add (:q!) in the command line.
+
+after merging we push it into remote repository such as github.
+
+--------------------------------forking and pull request--------------------------------------
+
+-- forking -> copy someone remote repository into his/her remote repository or github .
+and add some additional things to that files or some modifications done to that project and make a pull request
+(sending some message to owner of the repositor that i have made some change if you like it please approve my request and merge it to your account)
+
+
+
+
+
+
+
+
