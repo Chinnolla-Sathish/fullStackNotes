@@ -1,0 +1,33 @@
+--kernal :
+	kernal is basically a core component in operating system , it is a interface between processes and hardware components . it is the first program to load in the memory before boot(booting is the process of loading opearating system) loads.
+fucntions:
+->scheduling the processes
+->resource allocation
+->memory managent 
+->device managment
+
+=> if operating system is pistha then the outer part is shell(bash,etc) and the inner part is kernal.
+
+
+-------------------UNIX COMMANDS--------------------------
+
+-- ls  --> is used to list the files in a particular directory
+--cd  -->change directory used to navigate 
+--cd ~ it will take you to home directory irrespective of where you are
+--cd .. ->this will take you back form current directory
+--ctrl+click any name  -- that will open in bash
+--ctrl+A --> it move the beging of the path in bash
+--ctrl+E --> it move at the end of the path
+--ctrl+U --> it will remove entire path in bash 
+
+
+---------------------------------CREATE,OPEN AND REMOVE ----------------------------------
+
+--mkdir directory_name   --> creating a directory
+--touch file_name 	--> creating a file 
+--open/start file_name	--> it will open a file(for windows start ,for mac open)
+--rm file_name  --> it will remove the file
+--rm * --> it will remove all files from folder
+--rm -r directory_name -->it will remove the directory
+-- application_name file_name --> the file will open with particular application
+--pwd  --> it will print wroking directory path
