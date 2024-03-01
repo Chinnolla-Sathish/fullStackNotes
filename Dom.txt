@@ -1,0 +1,86 @@
+-- Dom add functionality to html elements .
+--conversion of html elements to Dom done by browser when we load. 
+-- Dom stands for document object model.(it allow  us to select html elements and mauplate html elements)
+-- JavaScript is always added at the end before body tag.
+--html tree generator  - link in video description (lecture 115)
+
+fisrtChild of dom is ->html
+->first and last child of html is head and body.
+
+
+-- Objects inside the have methods(describes the what that objects can do ) and proporties (describe somethig about the object)
+
+-- we can set and get the proporties 
+	=>get proporties  object.color;
+	=>set proporties  object.color = "red";
+
+-- adding javascript file to html
+	<script src="index.js" type="text/javascript"></script>
+--------------------DOM Tags---------------------------
+
+-->Document.querySelector("html element").innerHTML = "modification_content" --> it will select the particular html element that we specified in querySelector and do modifiactions.
+-->Document.firstElementChild --> it will return the first child.
+-->Document.lastElementChild --> is will return the last child that is body.
+-->Document.firstElementChild.firstElementChild --> it will return first element of first child i.e, title we can store this things in a variable and make changes like var title = Document.firstElementChild.firstElementChild
+
+	we can make changes by using title like => title.innerHTML="modification content"
+--------------------------------GETTING ELEMENTS FROM HTML TO JAVASCRIPT-----------
+--TagName,ClassName => this both have prural i.e, getElements not getElement because class name and tagnames are multipule in the html.
+
+-- document.getElementsByTagName("li") -> here element is prural it get the list  of elements.
+
+-- we can get length of array by
+	--> document.getElementsByTagName("li").length;
+-- we cannot manuplate entire list at once we need to select one particualr item form list it can be done by 
+
+	--> document.getElementByTagName("li")[0].style.color="purple";
+	--> document.getElementByTagName("li")[1].style.color="purple";
+	--> document.getElementByTagName("li")[2].style.color="purple";
+where 0,1,2 are index numbers
+-->document.getElementById("id_name"); 
+-->document.querySelector("a");
+-->document.querySelector("li a");
+-->document.qureySelector("li.class_name");
+-->document.querySelector("#id_name a");
+	here a is anchor tag
+-->document.querySelector("#id_name.class_name);  --> it only select first item form the all items mathced.
+-->document.querySelectorAll("#id_name.class_name); --> it will select all the items from the all the mathced items .
+-->document.querySelectorAll("#id_name.class_name)[2]; getting particular element form the list.
+
+-----------------------------HOW TO USE JAVASCRIPT TO MANUPULATE ELEMENTS----------
+--> Dom Style website is used to how mainpulate css elements dynamically.
+.style.fontSize="10rem";
+.style.visibility ="hidden";
+
+------------------------------------WE CAN ADD CLASSES TO THE EXISTING CLASS------
+		CSS Manpulation
+<button class="btn" >Click me</button>
+document.querySelector("button").classList.add("invisible"); // add class to the element
+<button class ="btn invisible">Click me</button>
+document.querySelector("button").classList.remove("invisible");
+<button class="btn" >Click me</button>
+
+document.querySelector("button").classList.toggle("invisible"); // if not there it add and if there it will remove.
+
+------------------------------TEXT MANPULATION USING JAVASCRIPT-----------------
+
+document.getElementById("id").textContent="hello";
+document.getElementById("id").innerHTML="hello";
+
+textContent and innerHTML will do same thing but the difference is below
+
+<h1 id="heading"><strong>Hello</strong></h1>
+
+document.getElementById("id_name").textContent; if i hit this it will give "hello"
+document.getElementById("id_name").innerHTML; if i hit this it will give <strong>Hello</strong>
+
+
+with innerhtml we will also implment html but with text content not 
+
+-----------------------Manipulating html attributes---------------------------
+--> attributes are basically inside the tag such as 
+	type,class,id,src,href, etc.
+
+document.querySelector("a").atrribute; it will give the list of attributes assoiaated with anchor tag;
+document.querySelector("a").getAttribute("href");
+document.querySelector("a").setAttribute("href","https://www.bing.com");
